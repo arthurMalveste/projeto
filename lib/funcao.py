@@ -22,7 +22,24 @@ def criar_s():
     funcao_sala()
 
 def atualizar_s():
-    print()
+    idatualizar_sala = int(input("\nQual o índice da sala que você deseja atualizar? "))
+
+    sala_p_atualizar = None
+    for sala in salas: 
+        if sala["id"] == idatualizar_sala:
+            sala_p_atualizar = sala
+            break
+    
+    if sala_p_atualizar == None:
+        print("Valor não encontrado!")
+    else:
+        novo_nome = input("\nQual o novo nome? ")
+        novo_numero = int(input("\nQual o novo numero? "))
+        
+        sala_p_atualizar["nome"] = novo_nome
+        sala_p_atualizar["numero"] = novo_numero
+
+    funcao_sala()
 
 def deletar_s():
     print()
