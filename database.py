@@ -1,9 +1,9 @@
 salas = [
-    {"id": 1, "numero": "101", "nome": "Sala de Reuniões"},
-    {"id": 2, "numero": "102", "nome": "Sala de Treinamento"},
-    {"id": 3, "numero": "103", "nome": "Sala de TI"},
-    {"id": 4, "numero": "104", "nome": "Sala de Descanso"},
-    {"id": 5, "numero": "105", "nome": "Sala Principal"}
+    {"id": 1, "numero": 101, "nome": "Sala de Reuniões"},
+    {"id": 2, "numero": 102, "nome": "Sala de Treinamento"},
+    {"id": 3, "numero": 103, "nome": "Sala de TI"},
+    {"id": 4, "numero": 104, "nome": "Sala de Descanso"},
+    {"id": 5, "numero": 105, "nome": "Sala Principal"}
 ]
 
 equipamentos = [

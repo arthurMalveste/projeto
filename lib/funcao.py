@@ -7,17 +7,17 @@ def mostrar_s():
 def criar_s():
     nome_sala = input("/n Qual o nome da sala? ")
     if equipamentos:
-        max_id = max(conta["id"] for conta in equipamentos)
+        max_id_sala = max(conta["id"] for conta in salas)
     else:
-        max_id = 0
+        max_id_sala = 0
     numero_sala = int(input("/n Qual o numero da sala ?")) 
 
     nova_sala = {
-            "id": max_id + 1,
+            "id": max_id_sala + 1,
             "numero": numero_sala,
             "nome": nome_sala
         }   
-    equipamentos.append(nova_sala)
+    salas.append(nova_sala)
 
     funcao_sala()
 
