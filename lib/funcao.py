@@ -42,7 +42,16 @@ def atualizar_s():
     funcao_sala()
 
 def deletar_s():
-    print()
+    id_para_deletar_sala = int(input("\nId que você deseja deletar: "))
+    
+    for sala in salas: 
+        if sala["id"] == id_para_deletar_sala:
+            salas.remove(sala)
+            print("Sala removido com sucesso.")
+            break
+    else:
+        print("Sala não encontrada.")
+    funcao_sala()
 
 # equipamentos
 
